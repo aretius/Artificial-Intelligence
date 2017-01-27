@@ -3,12 +3,16 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: Naked Twins are pairs of boxes in a sudoku that belong to the same unit(row , column or 3x3 group/sqaure) and have the same possibility of digits however each box should only have a possibility of 2 digits , ie length = 2. If such a case exists then we conclude that these 2 digits can occur only in these 2 boxes and no where else. Hence we remove the 2 digits from their entire unit. This is how Naked twins creates a Constraint and we can then propogate further on this constraint to reduce our Search/State space.
+A: Naked Twins are pairs of boxes in a sudoku that belong to the same unit(row , column or 3x3 group/sqaure) and have the same possibility of digits however each box should only have a possibility of 2 digits , ie length = 2. If such a case exists then we conclude that these 2 digits can occur only in these 2 boxes and no where else. Hence we remove the 2 digits from their entire unit. This is how Naked twins creates a Constraint and we can then propagate further on this constraint to reduce our Search/State space. The constraint that we first search for such a pair and if it exists we can the remove the possibilites from the entire unit to which they belong is the method of constraint propagation. We actually
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
 A: We know the following constraints for a normal sudoku :
+
 (1) If a square has only one possible value, then eliminate that value from the square's peers. 
+
 (2) If a unit has only one possible place for a value, then put the value there.
+
+The term unit and peer changes for a diagonal sudoku. For a diagonal sudoku the unit and peers are the same as a normal sudoku but with an added term. This added term adds to the set of constraints already available for a normal sudoku. Those are that instead of checking rows, columns or a 3x3 Group we now even have to check the two main Diagonals. Hence we now get an added set of constraints that restrict our possibilites of the boxes thereby reducing the search and state space.
 ### Install
 
 This project requires **Python 3**.
