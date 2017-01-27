@@ -3,12 +3,12 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: Using constraint propogation we first find all the boxes having possible values equal to 2 that is length = 2. After applying  this constraint we can then look for pairs of such boxes having number of values 2 and the possible digits equal and both of them being in each other's peer list. With this we finally eliminate those 2 digits from the other boxes/cells of the peer list into which both the selected twins/pairs belong to.
-
+A: Naked Twins are pairs of boxes in a sudoku that belong to the same unit(row , column or 3x3 group/sqaure) and have the same possibility of digits however each box should only have a possibility of 2 digits , ie length = 2. If such a case exists then we conclude that these 2 digits can occur only in these 2 boxes and no where else. Hence we remove the 2 digits from their entire unit. This is how Naked twins creates a Constraint and we can then propogate further on this constraint to reduce our Search/State space.
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: For Diagonal Sudoku the constraint that all the numbers on both the diagonals( main one ) should be unique that is each of them should occur once helps in reducing the search space. The normal constraints that each group( 3x3 cell) should have each digit only once and similar for rows and columns too apply. We can further use Naked Twins strategy to reduce the search space of DFS even more.
-
+A: We know the following constraints for a normal sudoku :
+(1) If a square has only one possible value, then eliminate that value from the square's peers. 
+(2) If a unit has only one possible place for a value, then put the value there.
 ### Install
 
 This project requires **Python 3**.
