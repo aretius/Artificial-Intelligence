@@ -18,8 +18,9 @@ Isolation Board Game Playing AI<br>
 # Project 3
 
 Pacman AI bot<br>
-• An AI bot that plays the Pacman game all by itself. It finds the path with the best score possible which is increased by eating food pellets that are spread in various locations accross the map. There are Ghosts and powerups that can kill ghosts , so including these the AI bot solves the Pacman game by itself.
-Various search strategies along with heuristics were implemented.
+• An AI bot that plays the Pacman game all by itself. <br>
+• It finds the path with the best score possible along with enemies/ghosts/food-pellets etc.<br>
+• Various search strategies along with heuristics were implemented such as Adverserial, A* etc.<br>
 
 # Project 4
 Simulated Annealing
@@ -29,7 +30,7 @@ Uploading soon
 
 # Project 6
 
-Solving AIR CARGO PROBLEM via PDDL
+Solving AIR CARGO PROBLEM via PDDL<br>
 • A Planning Problem - given different planes and cargo destinations and airports , find the optimal path for the travelling and transportation of cargos.<br>
 • Solved using a Planning Graph with PDDL.<br>
 • The Planning Graph helps in finding very good heuristics and reduces the exponential size of state space search tree.<br>
