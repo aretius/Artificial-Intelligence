@@ -1,7 +1,7 @@
 
 # Build a Game-playing Agent
 
-![Example game of isolation](viz.gif)
+
 
 ## Synopsis
 
