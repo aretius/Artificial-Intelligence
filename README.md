@@ -9,7 +9,7 @@ An AI agent that solves the given sudoku in an efficient and quick way. The proj
 # Project 2
 
 Isolation Board Game Playing AI<br>
-An AI bot that plays the game of Isolation by itself. The large state space needed to explore in such a game has been explored and strategies to shorten and reduce it such as alpha beta pruning have been used. The agent is built on the logic of minimax algorithm with various custom heuristics implemented and tested to improve further efficiency and reduce Horizon effect.
+An AI bot that plays the game of Isolation by itself. The large state space needed to explore in such a game has been explored and strategies to shorten and reduce it such as -- Alpha Beta Pruning have been used. The agent is built on the logic of minimax algorithm with various custom heuristics implemented and tested to improve further efficiency and reduce the Horizon effect.
 
 # Project 3
 
