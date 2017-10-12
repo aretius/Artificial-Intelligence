@@ -4,9 +4,9 @@ This repository contains my whole journey through Artificial Intelligence during
 # Project 1
 
 Sudoku Solver<br>
-• An AI agent that solves the given sudoku in an efficient and quick way. 
-• The project is implemented using a nice GUI.
-• Various stratergies that improve the speed of solution an reduce the expansion of state space have been implemented. 
+• An AI agent that solves the given sudoku in an efficient and quick way.<br>
+• The project is implemented using a nice GUI.<br>
+• Various stratergies that improve the speed of solution an reduce the expansion of state space have been implemented.<br>
 
 # Project 2
 
